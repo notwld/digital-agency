@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+
+.navbar {
+  display: flex;
+  background-color: transparent;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 2rem 2rem 9rem;
+  border-bottom: 0.5px solid white;
+  /* linear animation on border */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background blur filter*/
+  backdrop-filter: blur(3.5px);
+  transition: 0.3s;
+}
+.menu-section {
+  display: flex;
+  position: fixed;
+  top: 43px;
+  left: 20px;
+  z-index: 999999;
+}
+.menu-icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin-right: 1rem;
+  display: none;
+  z-index: 3;
+}
+.menuLinks {
+  display: none;
+}
+.active-links {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  list-style: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  background-color: #111111ef;
+  backdrop-filter: blur(3.5px);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.close {
+  position: absolute;
+  top: 45px;
+  right: 25px;
+  cursor: pointer;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  transition: 0.3s;
+}
+.dark-icon {
+  position: absolute;
+  top: 45px;
+  left: 25px;
+  cursor: pointer;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  transition: 0.3s;
+}
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.menu-links li{
+  padding: 1em;
+}
+.reslinks a {
+  text-decoration: none;
+  color: white;
+  font: 1.5rem sans-serif;
+  font-weight: bold;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+  margin-top: 1rem;
+}
+.dark {
+  background-color: rgb(8, 175, 115, 0.8);
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 2rem 2rem 9rem;
+  border-bottom: 0.5px solid white;
+  /* linear animation on border */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  /* background blur filter*/
+  transition: 0.3s;
+  backdrop-filter: blur(3.5px);
+}
+.darkMode {
+  cursor: pointer;
+}
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-section span {
+  color: white;
+  font: 20px "Open Sans";
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 5px;
+  text-align: left;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-links {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2rem 0 5rem;
+}
+.navContainer {
+  display: flex;
+  flex-direction: row;
+}
+.links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  font: 16px sans-serif;
+  font-weight: bold;
+  opacity: 0.7;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.3s;
+}
+.nav-btn {
+  background-color: rgb(8, 175, 115, 0.8);
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  font: 16px sans-serif;
+  font-weight: bold;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  transition: 0.3s;
+  opacity: 1;
+}
+.nav-btn:hover {
+  transition: 0.3s;
+  background-color: rgb(8, 175, 115, 1);
+}
+.vertical-nav {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 0.5px solid white;
+  height: 100%;
+  width: fit-content;
+  padding-top: 140px;
+}
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  width: 100%;
+  height: 50%;
+  border-bottom: 0.5px solid white;
+}
+.nav-items span {
+  color: white;
+  font: 12px "Open Sans";
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
+
+.nav-items:nth-child(2) {
+  border-bottom: none;
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .nav-links {
+    display: none;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+
+/* ----------- iPhone XR ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nav-links {
+    display: none;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+
+/* ----------- iPhone SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 300px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nav-links {
+    display: none;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-items span {
+    font-size: 10px;
+  }
+  .logo-section {
+    margin-left: -48px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .menu-icon {
+      display: block;
+    }
+
+}

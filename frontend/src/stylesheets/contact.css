@@ -1,0 +1,221 @@
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /* position: relative; */
+}
+.cover{
+    background: url('../assets/cover.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    height:70%; 
+    width: 100%;
+    z-index: -1;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.banner{
+    background-color: black;
+    width: fit-content;
+    padding: 35px 35px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    margin-left: 250px;
+    margin-top: 400px;
+    
+
+
+}
+.banner h1{
+    font-size:1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+.banner span{
+    font-size: 0.89rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    color: white;
+    width: 50%;
+}
+.btn:hover{
+    transition: 0.3s;
+    background-color: rgb(8, 175, 115, 1);
+    color: white;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    width: fit-content;
+    margin-bottom: 100px;
+    margin-top: 50px;
+
+    /* z-index: -1; */
+    /* position: relative; */
+    /* margin-left:425px; */
+}
+.serviceType{
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.serviceType h1{
+    font-size: 1rem;
+    /* font-weight: bold; */
+    margin-bottom: 0.5rem;
+    color: white;
+    letter-spacing: 1px;
+}
+.btnGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.btn{
+    background-color: transparent;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 2px solid rgb(8, 175, 115, 1);
+  font: 16px sans-serif;
+  font-weight: bold;
+  color: rgb(8, 175, 115, 1);
+  transition: 0.3s;
+  margin-left: 25px;
+}
+.btnActive{
+    background-color: rgb(8, 175, 115, 1);
+    color: white;
+}
+.formGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    margin-top: 20px;
+    float: right;
+    width: 100%;
+    margin-left: 65px;
+}
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.formGroup input,textarea{
+    padding: 1rem 1.25rem;
+    width: 100%;
+    background: none;
+    color: white;
+    font-size: 1rem;
+    /* position: relative; */
+    display: block;
+    float: right;
+    border: 1px solid #cacaca;
+    border-radius: 0.38rem;
+}
+@media only screen and (min-device-width: 300px) and (max-device-width: 758px) and (-webkit-min-device-pixel-ratio: 2) {
+    .banner{
+        margin-left: 0px;
+        margin-top: 58vh;
+        flex-direction: column;
+        padding-left: 98px;
+    }
+    .banner h1{
+        font-size: 1rem;
+    }
+    .banner span{
+        font-size: 0.7rem;
+        width: 100%;
+    }
+    .contactForm{
+        margin-left: 0px;
+        margin-top: 0px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        margin-bottom: 100vh;
+    }
+    .formGrid{
+        margin-left: 0px;
+    }
+    .formGroup input,textarea{
+        width: 100%;
+    }
+    .serviceType{
+        margin-left: 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 25px;
+        width: 100%;
+    }
+    .serviceType h1{
+        font-size: 2rem;
+        margin-left: 25px;
+    }
+    .btnGroup{
+        margin-left: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btn{
+        margin-top: 25px;
+    }
+    .formGrid{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .contactForm {
+        margin-left: 56px;
+        margin-top: 100px;
+    }
+    .banner{
+        margin-left: 0px;
+        margin-top: 58vh;
+        flex-direction: column;
+        padding-left: 98px;
+    }
+    .formGrid{
+        width: 80%;
+    }
+    .btnGroup{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+        margin-top: 20px;
+        width: 100%;
+    }
+}

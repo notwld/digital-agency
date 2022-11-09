@@ -1,0 +1,114 @@
+.thoughtItemContainer{
+    height: 100%;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.thoughtItem{
+    border-radius: 15px;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    width:70%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+}
+.thoughtItem img{
+    border-radius: 10%;
+    width: 100%;
+    height: 250px;
+    resize: cover;
+    margin-bottom: 2rem;
+}
+.thoughtItemText{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+.thoughtItemText h3{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+}
+.thoughtItemText p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: justify;
+}
+
+.author h3{
+    font-size: 1rem;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 744px) and (-webkit-min-device-pixel-ratio: 2) {
+    .author h3{
+        font-size: .7rem!important;
+    }
+    .thoughtItemContainer{
+        margin-top: 80x;
+        margin-bottom: 50px;
+    }
+    .thoughtItem{
+        margin-top: 50px;
+        margin-left: 25px;
+        width: 90%;
+        height: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .thoughtItem img{
+        width: 70%;
+        height: 150px;
+        resize: cover;
+        margin-bottom: 2rem;
+    }
+    .thoughtItemText{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+    }
+    .thoughtItemText h3{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: white;
+    }
+    .thoughtItemText p{
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+        color: white;
+        text-align: justify;
+    }
+
+}
