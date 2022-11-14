@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from "react";
 import nav from ".././stylesheets/nav.css";
+import logo from ".././assets/logo.png";
 import { Link, Outlet } from "react-router-dom";
 
 export default function Nav({darkMode,handleDarkMode}) {
@@ -35,7 +36,7 @@ export default function Nav({darkMode,handleDarkMode}) {
           <img src={require('../assets/menu.png')} alt=""   width={25} height={25} style={{filter:darkMode?'invert(100%)':'invert(0%)'}} />
         </div>
         
-        <div className="menuLinks">
+        <div className="menuLinks" style={{zIndex:999999999}}>
           <div className="close" onClick={handleMenu}>
             <img src={require('../assets/close.png')} alt=""   width={25} height={25} style={{filter:'invert(100%)'}} />
           </div>
@@ -63,10 +64,10 @@ export default function Nav({darkMode,handleDarkMode}) {
         <Outlet />
         </div>
       </div>
-      <nav className={navbar ? "dark" : "navbar"} style={{borderColor:darkMode?"white":"black",backgroundColor:darkMode?null:'transparent'}}>
+      <nav className={navbar ? "dark" : "navbar"} style={{borderColor:darkMode?"white":"black",backgroundColor:darkMode?null:'transparent',zIndex:9999999}}>
         <div className="logo-section" data-aos="fade-in">
-          <Link to="/"><img src="" alt="logo" className="logo" /></Link>
-          <span><Link to='/' style={{textDecoration:'none',color:!darkMode?'black':'white'}}>Company Name</Link></span>
+          <Link to="/"><img src={logo} alt="logo" className="logo" /></Link>
+          <span><Link to='/' style={{textDecoration:'none',color:!darkMode?'black':'white'}}>Barlasify</Link></span>
         </div>
         <ul className="nav-links" data-aos="fade-in">
           <li className="links">
@@ -88,7 +89,7 @@ export default function Nav({darkMode,handleDarkMode}) {
           </li>
         </ul>
       </nav>
-      <div className="vertical-nav" style={{borderColor:darkMode?"white":"black"}}>
+      <div className="vertical-nav" style={{borderColor:darkMode?"white":"black",zIndex:99999999}}>
         <div className="nav-items" style={{borderColor:darkMode?"white":"black"}}>
             <span style={{color:!darkMode?'black':'white'}}>Creative <br/>Technology</span>
         </div>

@@ -35,7 +35,7 @@ export default function About({ darkMode }) {
   // };
   return (
     <div className="aboutContainer" data-aos="fade-in">
-      <div className="cover" style={{ background: `url(${team})`, objectFit: 'cover', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+      <div className="cover" style={{ background: `url(${team})`, objectFit: 'cover', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',zIndex:-1,height:'13%' }}>
       </div>
       <div className="banner" style={{ marginTop: "370px" }} data-aos="fade-right">
         <h1 style={{ fontSize: "2.5rem" }}>We're Barlasify</h1>

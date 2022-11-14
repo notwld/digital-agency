@@ -1,12 +1,15 @@
 .thoughtsContainer {
-  height: 100%;
-  display: flex;
-  margin-left: 150px;
-  margin-top: 200px;
-  margin-bottom: 100px;
-  /* margin-right: 100px; */
-  display: flex;
-  flex-direction: column;
+     /* padding: 90px; */
+     padding-left: 115px;
+     padding-top: 200px;
+     height: 100%;
+     display: flex;
+     /* margin-left: 83px; */
+     /* margin-top: 139px; */
+     margin-bottom: 100px;
+     /* margin-right: 100px; */
+     display: flex;
+     flex-direction: column;
 }
 /* .homeContent {
   margin-bottom: -135px;
@@ -99,6 +102,20 @@
     margin-top: 0.2rem;
     margin-bottom: 0.1rem;
     color: white;
+  }
+  .thoughtsContainer{
+    margin-left: 0px!important;
+    /* padding: 90px; */
+    padding-left: 84px;
+    padding-top: 200px;
+    /* height: 100%; */
+    /* display: flex; */
+    /* margin-left: 83px; */
+    /* margin-top: 139px; */
+    /* margin-bottom: 100px; */
+    /* margin-right: 100px; */
+    display: flex;
+    flex-direction: column;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
