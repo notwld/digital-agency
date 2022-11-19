@@ -22,7 +22,7 @@
   position: fixed;
   top: 43px;
   left: 20px;
-  z-index: 999999;
+  z-index: 99999999999;
 }
 .menu-icon {
   height: 30px;
