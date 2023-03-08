@@ -1,3 +1,3 @@
 # digital-agency-react-app
 
-live demo: https://digital-agency.netlifyapp.com
+live demo: https://barlisafy.netlify.app
